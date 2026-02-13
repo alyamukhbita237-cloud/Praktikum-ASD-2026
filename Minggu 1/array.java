@@ -29,7 +29,7 @@ public class array {
         System.out.println("hasil Konversi Nilai");
         System.out.println("======================");
 
-        System.out.println("MK\t\t\t\t\tNilai Angka\t\tNilai Huruf\t\tBobot Nilai");
+        System.out.printf("%-40s %-12s %-12s %-12s\n",  "MK", "Nilai Angka", "Nilai Huruf", "Bobot");
 
         for (int i = 0; i < matkul.length; i++) {
 
@@ -62,7 +62,9 @@ public class array {
             totalNilai += bobotNilai * sks[i];
             totalSks += sks[i];
 
-            System.out.println(matkul[i] + "\t\t\t\t" + nilaiAngka[i] + "\t\t" + nilaiHuruf + "\t\t" + bobotNilai);
+            System.out.printf("%-40s %-12.2f %-12s %-12.2f\n",
+                        matkul[i], nilaiAngka[i], nilaiHuruf, bobotNilai);
+
         }
 
         System.out.println("===========================");
