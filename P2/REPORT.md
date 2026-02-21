@@ -28,10 +28,35 @@ Mahasiswa? Sebutkan apa saja atributnya!
     - ada 4 method, yaitu tampilkanInformasi(): void; ubahKelas(kelasBaru: String): void; updateIpk(ipkBaru: double): void; nilaiKinerja(ipk: double): String
 
 4. Modifikasi kode program 
-    ![Screenshoot](images/modifPercobaan1.png)
+   - ![Screenshoot](images/modifPercobaan1.png)
 
 5. Jelaskan bagaimana cara kerja method nilaiKinerja() dalam mengevaluasi kinerja mahasiswa, kriteria apa saja yang digunakan untuk menentukan nilai kinerja tersebut, dan apa yang dikembalikan (di-return-kan) oleh method nilaiKinerja() tersebut?
     - method nilaiKinerja() bekerja dengan cara mengecek kondisi nilai IPK (>= 3.5 kinerja sangat baik, >=3.0 kinerja baik, >=2.0 kinerja cukup, dan <2.0 kinerja kurang). Method nilaiKinerja() mengembalikan nilai bertipe String berupa kategori kinerja mahasiswa.
+
+### 2.2.1 Percobaan 2
+
+![Screenshoot](images/percobaan2.png)
+
+### 2.2.2 Verifikasi Hasil Percobaan
+
+![Screenshoot](images/verifPercobaan2.png)
+
+### 2.2.3 Pertanyaan
+
+1. Pada class MahasiswaMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi! Apa nama object yang dihasilkan?
+    - ![Screenshoot](images/pertanyaan1percobaan2.png)
+    nama object yang dihasilkan yaitu mhs1
+
+2.  Bagaimana cara mengakses atribut dan method dari suatu objek?
+    - Atribut diakses dengan namaObjek.namaAtribut, sedangkan method dipanggil dengan namaObjek.namaMethod().
+
+3. Mengapa hasil output pemanggilan method tampilkanInformasi() pertama dan kedua berbeda?
+    - karena sebelum pemanggilan method tampilkanInformasi() yang kedua telah dilakukan perubahan nilai atribut objek, sehingga output yang dihasilkan berbeda
+    
+
+
+
+
 
 
 
