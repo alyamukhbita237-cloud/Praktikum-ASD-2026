@@ -52,7 +52,33 @@ Mahasiswa? Sebutkan apa saja atributnya!
 
 3. Mengapa hasil output pemanggilan method tampilkanInformasi() pertama dan kedua berbeda?
     - karena sebelum pemanggilan method tampilkanInformasi() yang kedua telah dilakukan perubahan nilai atribut objek, sehingga output yang dihasilkan berbeda
+
+###   2.3.1 Percobaan 3
+
+![Screenshoot](images/percobaan3.png)
+
+### 2.3.2 Verifikasi Hasil Percobaan
+
+![Screenshoot](images/verifPercobaan3.png)
+
+### 2.3.3 Pertanyaan
+
+1. Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk mendeklarasikan konstruktor berparameter!
+    - ![Screenshoot](images/pertanyaan1percobaan3.png)
+
+2. Perhatikan class MahasiswaMain. Apa sebenarnya yang dilakukan pada baris program berikut? 
+    - baris program tersebut melakukan instansiasi pada konstruktor berparameter
+
+3. Hapus konstruktor default pada class Mahasiswa, kemudian compile dan run program. Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
+    - program tidak dapat dijalankan karena objek dibuat tanpa parameter (new Mahasiswa03()), sementara konstruktor tanpa parameter sudah dihapus dan tidak tersedia lagi.
+
+4. Setelah melakukan instansiasi object, apakah method di dalam class Mahasiswa harus diakses secara berurutan? Jelaskan alasannya!
+    - tidak, method dalam class tidak harus diakses secara berurutan. Method dapat dipanggil sesuai kebutuhan di dalam program. Urutan eksekusi ditentukan oleh urutan pemanggilan di dalam main, bukan urutan penulisan method di dalam class.
+
+5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor berparameter dari class Mahasiswa!
+    - ![Screenshoot](images/pertanyaan5percobaan3.png)
     
+
 
 
 
