@@ -7,6 +7,8 @@
 
 # Jobsheet 2 OBJECT
 
+## 2.1 
+
 ### 2.1.1 Percobaan 1
 
 ![Screenshoot](images/percobaan1.png)
@@ -33,6 +35,8 @@ Mahasiswa? Sebutkan apa saja atributnya!
 5. Jelaskan bagaimana cara kerja method nilaiKinerja() dalam mengevaluasi kinerja mahasiswa, kriteria apa saja yang digunakan untuk menentukan nilai kinerja tersebut, dan apa yang dikembalikan (di-return-kan) oleh method nilaiKinerja() tersebut?
     - method nilaiKinerja() bekerja dengan cara mengecek kondisi nilai IPK (>= 3.5 kinerja sangat baik, >=3.0 kinerja baik, >=2.0 kinerja cukup, dan <2.0 kinerja kurang). Method nilaiKinerja() mengembalikan nilai bertipe String berupa kategori kinerja mahasiswa.
 
+## 2.2
+
 ### 2.2.1 Percobaan 2
 
 ![Screenshoot](images/percobaan2.png)
@@ -52,6 +56,8 @@ Mahasiswa? Sebutkan apa saja atributnya!
 
 3. Mengapa hasil output pemanggilan method tampilkanInformasi() pertama dan kedua berbeda?
     - karena sebelum pemanggilan method tampilkanInformasi() yang kedua telah dilakukan perubahan nilai atribut objek, sehingga output yang dihasilkan berbeda
+
+## 2.3 
 
 ###   2.3.1 Percobaan 3
 
@@ -77,6 +83,17 @@ Mahasiswa? Sebutkan apa saja atributnya!
 
 5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor berparameter dari class Mahasiswa!
     - ![Screenshoot](images/pertanyaan5percobaan3.png)
+
+## 2.4 Latihan Praktikum
+
+### Latihan 1
+
+- ![Screenshoot](images/hasilLatihan1.png)
+
+### Latihan 2
+
+- ![Screenshoot](images/hasilLatihan2.png)
+
     
 
 

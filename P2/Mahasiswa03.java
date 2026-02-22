@@ -1,7 +1,5 @@
 package P2;
 
-import java.util.Scanner;
-
 public class Mahasiswa03 {
     String nama;
     String nim;
@@ -38,7 +36,7 @@ public class Mahasiswa03 {
         }
     }
 
-    String nilaiKinerja (){
+    String nilaiKinerja (double ipk){
         if (ipk >= 3.5) {
             return "Kinerja Sangat baik";
         } else if (ipk >= 3.0){
