@@ -40,5 +40,10 @@ konstruktur pada baris program berikut?
 
 ![Screenshoot](images/runPercobaan2.png)
 
+### 3.3.3 Pertanyaan
+
+1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah no 3.
+    - ![Screenshoot](images/modifPertanyaanP2.png)
+    - ![Screenshoot](images/modifPertanyaanP2-.png)
 
 
