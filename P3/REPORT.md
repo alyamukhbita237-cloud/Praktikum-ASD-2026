@@ -65,6 +65,15 @@ myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
     - iya bisa, contohnya construktor mahasiswa yang mempunyai construktor nim, nama, dan kelas
 
 2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
-    - 
+    - ![Screenshoot](images/tambahData.png)
+
+3. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method
+tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
+    - ![Screenshoot](images/cetakInfo.png)
+
+4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari
+array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+    - ![Screenshoot](images/inputUser.png)
+
 
 
