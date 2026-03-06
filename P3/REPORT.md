@@ -46,4 +46,25 @@ konstruktur pada baris program berikut?
     - ![Screenshoot](images/modifPertanyaanP2.png)
     - ![Screenshoot](images/modifPertanyaanP2-.png)
 
+2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama
+myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
+    - karena array myArrayOfMahasiswa hanya dibuat sebagai tempat penyimpanan objek, tetapi objek Mahasiswa pada indeks array belum diinisialisasi, sehingga menyebabkan error
+
+### 3.4.1 Percobaan 3
+
+![Screenshoot](images/percobaan3.png)
+![Screenshoot](images/percobaan3-.png)
+
+### 3.4.2 Verifikasi Hasil Percobaan 3
+
+![Screenshoot](images/runPercobaan3.png)
+
+### 3.4.3 Pertanyaan
+
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+    - iya bisa, contohnya construktor mahasiswa yang mempunyai construktor nim, nama, dan kelas
+
+2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
+    - 
+
 
