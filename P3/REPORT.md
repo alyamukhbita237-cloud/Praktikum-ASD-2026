@@ -77,8 +77,9 @@ array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
 
 ### Tugas Praktikum 1
 
-
+ ![Screenshoot](images/verifTugas1.png)
 
 ### Tugas Praktikum 2
 
+![Screenshoot](images/verifTugas2.png)
 
