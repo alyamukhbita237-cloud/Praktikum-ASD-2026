@@ -75,5 +75,10 @@ tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
 array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
     - ![Screenshoot](images/inputUser.png)
 
+### Tugas Praktikum 1
+
+
+
+### Tugas Praktikum 2
 
 
