@@ -104,7 +104,23 @@ pangkatBF() yang tanpa parameter?
 4. Tarik tentang cara kerja method pangkatBF() dan pangkatDC()!
     - method pangkatBF() bekerja dengan cara mengalikan nilai basis secara berulang menggunakan perulangan sampai jumlah perkalian sesuai dengan nilai pangkat. sedangkan pangkatDC() bekerja dengan cara membagi perhitungan pangkat menjadi bagian yang lebih kecil menggunakan rekursi, kemudian menggabungkan kembali hasilnya sampai mendapatkan hasil akhir.
 
-### 5.4 Percobaan 3
+### 5.4 Percobaan 3 Menghitung Sum Array dengan Algoritma Brute Force dan Divide and Conquer
+
+Hasil Run :
+
+``` java
+Masukkan jumlah elemen: 5
+Masukkan keuntungan ke- 1: 10
+Masukkan keuntungan ke- 2: 20
+Masukkan keuntungan ke- 3: 30
+Masukkan keuntungan ke- 4: 40
+Masukkan keuntungan ke- 5: 50
+Total keuntungan menggunakan Bruterforce: 150.0
+Total keuntungan menggunakan Divide and Conquer: 150.0
+```
+
+### 5.4.1 Pertanyaan
+1. 
 
 
 
