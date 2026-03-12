@@ -8,7 +8,7 @@ public class MainFaktorial {
         System.out.print("Masukkan nilai: ");
         int nilai = alya.nextInt();
 
-        faktorial fk = new faktorial ();
+        Faktorial fk = new Faktorial ();
         System.out.println("Nilai faktorial "+nilai+
             " menggunakan BF: "+fk.faktorialBF(nilai));
         System.out.println("Nilai faktorial "+ nilai+
