@@ -24,5 +24,17 @@ perbedaan bagian kode pada penggunaan if dan else!
 2. Apakah memungkinkan perulangan pada method faktorialBF() diubah selain menggunakan
 for? Buktikan!
     - ya, memungkinkan. perulangan pada method faktorialBF() tidak harus menggunakan for, tetapi juga bisa menggunakan while atau do-while. 
+    ``` java
+    int fakto = 1;
+        int i = 1;
+        while (i <= n) {
+            fakto = fakto *i;
+            i++;
+        }
+        return fakto;
     
+    Masukkan nilai: 5
+    Nilai faktorial 5 menggunakan BF: 120
+    Nilai faktorial 5 menggunakan DC: 120
+    ```
 
