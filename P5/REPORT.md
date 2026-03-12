@@ -120,7 +120,22 @@ Total keuntungan menggunakan Divide and Conquer: 150.0
 ```
 
 ### 5.4.1 Pertanyaan
-1. 
+1. Kenapa dibutuhkan variable mid pada method TotalDC()?
+    - variabel mid digunakan untuk menentukan titik tengah data agar proses dapat dibagi menjadi dua bagian dalam algoritma Divide and Conquer
+
+2. Untuk apakah statement di bawah ini dilakukan dalam TotalDC()?
+    - statement tersebut digunakan untuk menghitung total bagian kiri dan kanan array secara rekursif sebelum digabungkan menjadi total akhir.
+
+3. Kenapa diperlukan penjumlahan hasil lsum dan rsum seperti di bawah ini?
+    - diperlukan untuk menggabungkan hasil perhitungan dari dua bagian array yang telah diproses secara rekursif
+
+4. Apakah base case dari totalDC()?
+    - base case dari totalDC() adalah ketika l == r, karena pada kondisi ini array hanya memiliki satu elemen sehingga tidak perlu dibagi lagi.
+
+5. Tarik Kesimpulan tentang cara kerja totalDC()
+    - method totalDC() bekerja dengan cara membagi array menjadi dua bagian menggunakan titik tengah (mid), kemudian menghitung total masing-masing bagian secara rekursif hingga mencapai base case. setelah itu, hasil dari bagian kiri (lsum) dan kana (rsum) digabungkan dengan penjumlahan untuk mendapatkan total keseluruhan.
+
+
 
 
 
