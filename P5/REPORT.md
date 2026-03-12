@@ -69,6 +69,43 @@ HASIL PANGKAT DIVIDE AND CONQUER:
 
 ### 5.3.1 Pertanyaan
 
+1. Jelaskan mengenai perbedaan 2 method yang dibuat yaitu pangkatBF() dan pangkatDC()!
+    - pangkatBF() menghitung perpangkatan dengan cara perkalian berulang menggunakan perulangan (loop) dari 1 sampai nilai pangkat. setiap iterasi mengalikan nilai basis dengan hasil sebelumnya sampai pangkat tercapai.
+    - pangkatDC() menghitung perpangkatan dengan cara membagi masalah menjadi lebih kecil menggunakan rekursi. nilai pangkat dibagi menjadi setengah (n/2), kemudian hasilnya dikalikan kembali hingga mendapatkan hasil akhir.
+
+2. Apakah tahap combine sudah termasuk dalam kode tersebut?Tunjukkan!
+    - Ya sudah ada
+    ``` java
+    return (pangkatDC(a, n/2)*pangkatDC(a, n/2)*a);
+    return (pangkatDC(a, n/2)*pangkatDC(a, n/2));
+    ```
+
+3.  Pada method pangkatBF()terdapat parameter untuk melewatkan nilai yang akan dipangkatkan
+dan pangkat berapa, padahal di sisi lain di class Pangkat telah ada atribut nilai dan pangkat,
+apakah menurut Anda method tersebut tetap relevan untuk memiliki parameter? Apakah bisa
+jika method tersebut dibuat dengan tanpa parameter? Jika bisa, seperti apa method
+pangkatBF() yang tanpa parameter?
+
+    - method pangkatBF() bisa dibuat tanpa parameter karena nilai yang diperlukan sudah tersedia dalam atribut nilai dan pangkat pada class Pangkat, sehingga method dapat langsung menggunakan atribut tersebut.
+
+    ``` java
+    perubahan di method pangkatBF()
+    int pangkatBF (){
+        int hasil = 1;
+        for (int i = 0; i < pangkat; i++) {
+            hasil = hasil*nilai;
+        }
+        return hasil;
+    }
+    perubahan di MainPangkat
+    System.out.println(p.nilai+ "^"+p.pangkat+": "+p.pangkatBF());
+    ```
+
+4. Tarik tentang cara kerja method pangkatBF() dan pangkatDC()!
+    - method pangkatBF() bekerja dengan cara mengalikan nilai basis secara berulang menggunakan perulangan sampai jumlah perkalian sesuai dengan nilai pangkat. sedangkan pangkatDC() bekerja dengan cara membagi perhitungan pangkat menjadi bagian yang lebih kecil menggunakan rekursi, kemudian menggabungkan kembali hasilnya sampai mendapatkan hasil akhir.
+
+### 5.4 Percobaan 3
+
 
 
 
