@@ -126,8 +126,10 @@ IPK: 3.1
 ```
 a. Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?
 - Karena setelah n-1 tahap, semua data sudah pasti terurut
+
 b. Mengapa syarat dari perulangan j adalah j<listMhs.length-i ?
 - Karena setiap tahap elemen terbesar akan menggelembung ke posisi paling akhir, jadi bagian belakang tidak perlu dicek lagi
+
 c. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan
 berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
 - perulangan i akan berlangsung selama 49 kali yaitu 0 sampai 48
