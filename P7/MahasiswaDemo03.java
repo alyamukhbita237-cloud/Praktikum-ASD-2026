@@ -33,7 +33,6 @@ public class MahasiswaDemo03 {
         }
 
             list.tampil();
-            //melakukan pencarian data sequential
             System.out.println("------------------------------------");
             System.out.println("Pencarian data");
             System.out.println("------------------------------------");
@@ -42,6 +41,7 @@ public class MahasiswaDemo03 {
             String strCari = alya.nextLine();
             double cari = Double.parseDouble(strCari);
 
+            //melakukan pencarian data sequential
             System.out.println("----------------------------------");
             System.out.println("menggunakan sequential searching");
             System.out.println("----------------------------------");
@@ -50,10 +50,15 @@ public class MahasiswaDemo03 {
             list.tampilPosisi(cari, pss);
             list.tampilDataSearch(cari, pss);
 
-            list.tampil();
             //melakukan pencarian data Binary
+            System.out.println("----------------------------------");
+            System.out.println("menggunakan binary search");
+            System.out.println("----------------------------------");
+            double posisi2 = list.findBinarySearch(cari, 0, n-1);
+            int pss2 = (int)posisi2;
+            list.tampilPosisi(cari, pss2);
+            list.tampilDataSearch(cari, pss2);
                        
-
         // Mahasiswa03 m1 = new Mahasiswa03("123","Zidan","2A",3.2);
         // Mahasiswa03 m2 = new Mahasiswa03("124", "Ayu", "2A", 3.5);
         // Mahasiswa03 m3 = new Mahasiswa03("125", "Sofi", "2A", 3.1);

@@ -86,7 +86,175 @@ kode di atas?
 
 Hasil Run
 ```java
+Masukkan jumlah mahasiswa: 5
+Masukkan Data Mahasiswa ke- 1
+NIM   : 111
+Nama  : adi
+Kelas : 2
+IPK   : 3.1
+--------------------
+Masukkan Data Mahasiswa ke- 2
+NIM   : 222
+Nama  : ila
+Kelas : 2
+IPK   : 3.2
+--------------------
+Masukkan Data Mahasiswa ke- 3
+NIM   : 333
+Nama  : lia
+Kelas : 2
+IPK   : 3.3
+--------------------
+Masukkan Data Mahasiswa ke- 4
+NIM   : 444
+Nama  : susi
+Kelas : 2
+IPK   : 3.5
+--------------------
+Masukkan Data Mahasiswa ke- 5
+NIM   : 555
+Nama  : anita 
+Kelas : 2
+IPK   : 3.7
+--------------------
+Nama: adi
+NIM: 111
+Kelas: 2
+IPK: 3.1
+-----------------------------
+Nama: ila
+NIM: 222
+Kelas: 2
+IPK: 3.2
+-----------------------------
+Nama: lia
+NIM: 333
+Kelas: 2
+IPK: 3.3
+-----------------------------
+Nama: susi
+NIM: 444
+Kelas: 2
+IPK: 3.5
+-----------------------------
+Nama: anita
+NIM: 555
+Kelas: 2
+IPK: 3.7
+-----------------------------
+----------------------------------
+menggunakan binary search
+----------------------------------
+data mahasiswa dengan IPK : 3.7 ditemukan pada indeks 4
+nim      : 555
+nama     : anita
+kelas    : 2
+ipk      : 3.7
+```
+### 6.3.3. Pertanyaan
 
+1. Tunjukkan pada kode program yang mana proses divide dijalankan!
+```java
+mid = (left + right) / 2;
+```
+
+2. Tunjukkan pada kode program yang mana proses conquer dijalankan!
+```java
+return findBinarySearch(cari, left, mid - 1);
+return findBinarySearch(cari, mid+1, right);
+```
+
+3. Apa fungsi left, right, dan mid?
+- left untuk menunjukkan batas kiri dari data yang sedang dicari, right untuk menunjukkan batas kanan dari data yg dicari, mid untuk menunjukkan posisi tengah dari data
+
+4. Jika data IPK yang dimasukkan tidak urut. Apakah program masih dapat berjalan? Mengapa
+demikian?
+- program tetap dapat berjalan jika menggunakan sequential search karena tidak membutuhkan data terurut. Namun, jika menggunakan binary search, data harus diurutkan terlebih dahulu, jika tidak maka hasil pencarian bisa tidak akurat.
+
+5. Jika IPK yang dimasukkan dari IPK terbesar ke terkecil (misal: 3.8, 3.7, 3.5, 3.4, 3.2) dan elemen
+yang dicari adalah 3.2. Bagaimana hasil dari binary search? Apakah sesuai? Jika tidak sesuai maka
+ubahlah kode program binary seach agar hasilnya sesuai
+- tidak sesuai
+```java
+int findBinarySearch(double cari, int left, int right) {
+    int mid;
+    if (right >= left) {
+        mid = (left + right) / 2;
+        if (cari == listMhs[mid].ipk) {
+            return (mid);
+        } else if (listMhs[mid].ipk < cari) {
+            return findBinarySearch(cari, left, mid - 1);
+        } else {
+            return findBinarySearch(cari, mid+1, right);
+            }
+        }
+        return -1;
+    }
+```
+
+6. Jelaskan bagaimana binary search menentukan bahwa data yang dicari tidak ditemukan di dalam
+array.
+- binary search menyatakan data tidak ditemukan ketika batas pencarian sudah tidak valid, yaitu saat nilai left lebih besar dari right. Hal ini menunjukkan bahwa seluruh bagian array yang mungkin sudah diperiksa dan tidak ditemukan nilai yang dicari.
+
+7. Modifikasi program di atas yang mana jumlah mahasiswa yang diinputkan sesuai dengan masukan
+dari keyboard.
+```java
+Masukkan jumlah mahasiswa: 5
+Masukkan Data Mahasiswa ke- 1
+NIM   : 111
+Nama  : adi
+Kelas : 2
+IPK   : 3.1
+--------------------
+Masukkan Data Mahasiswa ke- 2
+NIM   : 222
+Nama  : ila
+Kelas : 2
+IPK   : 3.2
+--------------------
+Masukkan Data Mahasiswa ke- 3
+NIM   : 333
+Nama  : lia
+Kelas : 2
+IPK   : 3.3
+--------------------
+Masukkan Data Mahasiswa ke- 4
+NIM   : 444
+Nama  : susi
+Kelas : 2
+IPK   : 3.5
+--------------------
+Masukkan Data Mahasiswa ke- 5
+NIM   : 555
+Nama  : anita 
+Kelas : 2
+IPK   : 3.7
+--------------------
+Nama: adi
+NIM: 111
+Kelas: 2
+IPK: 3.1
+-----------------------------
+Nama: ila
+NIM: 222
+Kelas: 2
+IPK: 3.2
+-----------------------------
+Nama: lia
+NIM: 333
+Kelas: 2
+IPK: 3.3
+-----------------------------
+Nama: susi
+NIM: 444
+Kelas: 2
+IPK: 3.5
+-----------------------------
+Nama: anita
+NIM: 555
+Kelas: 2
+IPK: 3.7
+-----------------------------
 ```
 
 
