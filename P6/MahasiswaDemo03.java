@@ -26,7 +26,7 @@ public class MahasiswaDemo03 {
             System.out.print("IPK : ");
             String ipkStr = alya.nextLine();
             double ipk = Double.parseDouble(ipkStr);
-            System.out.println();
+            System.out.println("--------------------");
 
             Mahasiswa03 m = new Mahasiswa03(nim, nama, kelas, ipk);
             list.tambah(m);
@@ -48,6 +48,14 @@ public class MahasiswaDemo03 {
 
         System.out.println("Data Mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
         list.bubbleSort();
+        list.tampil();
+
+        System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC)");
+        list.selectionSort();
+        list.tampil();
+
+        System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (ASC)");
+        list.insertionSort();
         list.tampil();
     }
     

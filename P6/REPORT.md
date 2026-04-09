@@ -189,6 +189,145 @@ IPK: 3.6
 -----------------------------
 ```
 
+## Praktikum 3 - 5.3.5 Mengurutkan Data Mahasiswa Berdasarkan IPK (Selection Sort)
+
+- Verifikasi Hasil Percobaan
+``` java
+Masukkan jumlah mahasiswa: 5
+Data mahasiswa ke- 1
+NIM : 123
+Nama : ali
+Kelas : 2b
+IPK : 3.9
+--------------------
+Data mahasiswa ke- 2
+NIM : 124
+Nama : ila
+Kelas : 2b
+IPK : 3.1
+--------------------
+Data mahasiswa ke- 3
+NIM : 125
+Nama : agus
+Kelas : 2b
+IPK : 3.6
+--------------------
+Data mahasiswa ke- 4
+NIM : 126
+Nama : tika
+Kelas : 2b
+IPK : 3.3
+--------------------
+Data mahasiswa ke- 5
+NIM : 127
+Nama : udin
+Kelas : 2b
+IPK : 3.2
+--------------------
+Data yang sudah terurut menggunakan SELECTION SORT (ASC)
+Nama: ila
+NIM: 124
+Kelas: 2b
+IPK: 3.1
+-----------------------------
+Nama: udin
+NIM: 127
+Kelas: 2b
+IPK: 3.2
+-----------------------------
+Nama: tika
+NIM: 126
+Kelas: 2b
+IPK: 3.3
+-----------------------------
+Nama: agus
+NIM: 125
+Kelas: 2b
+IPK: 3.6
+-----------------------------
+Nama: ali
+NIM: 123
+Kelas: 2b
+IPK: 3.9
+-----------------------------
+
+### 5.3.7 Pertanyaan
+Di dalam method selection sort, terdapat baris program seperti di bawah ini:
+```java
+int idxMin = i;
+    for (int j = i+1; j < listMhs.length; j++) {
+        if (listMhs[j].ipk < listMhs[idxMin].ipk) {
+            idxMin = j;
+            }
+        }
+```
+Untuk apakah proses tersebut, jelaskan!
+- untuk mencari posisi index nilai IPK terkecil pada bagian array yang belum terurut
+
+## Praktikum 4 - 5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort
+
+- Verifikasi Hasil Percobaan
+```java
+Masukkan jumlah mahasiswa: 5
+Data mahasiswa ke- 1
+NIM : 111
+Nama : ayu
+Kelas : 2c
+IPK : 3.7
+--------------------
+Data mahasiswa ke- 2
+NIM : 222
+Nama : dika
+Kelas : 2c
+IPK : 3.0
+--------------------
+Data mahasiswa ke- 3
+NIM : 333
+Nama : ila
+Kelas : 2c
+IPK : 3.8
+--------------------
+Data mahasiswa ke- 4
+NIM : 444
+Nama : susi
+Kelas : 2c
+IPK : 3.1
+--------------------
+Data mahasiswa ke- 5
+NIM : 555
+Nama : yayuk
+Kelas : 2c
+IPK : 3.4
+--------------------
+Data yang sudah terurut menggunakan INSERTION SORT (ASC)
+Nama: dika
+NIM: 222
+Kelas: 2c
+IPK: 3.0
+-----------------------------
+Nama: susi
+NIM: 444
+Kelas: 2c
+IPK: 3.1
+-----------------------------
+Nama: yayuk
+NIM: 555
+Kelas: 2c
+IPK: 3.4
+-----------------------------
+Nama: ayu
+NIM: 111
+Kelas: 2c
+IPK: 3.7
+-----------------------------
+Nama: ila
+NIM: 333
+Kelas: 2c
+IPK: 3.8
+-----------------------------
+```
+
+
 
 
 
