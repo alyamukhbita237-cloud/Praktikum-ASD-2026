@@ -135,7 +135,59 @@ berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
 - perulangan i akan berlangsung selama 49 kali yaitu 0 sampai 48
 2. Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad)
 yang terdiri dari nim, nama, kelas, dan ipk!
+```java
+Masukkan jumlah mahasiswa: 3
+Data mahasiswa ke- 1
+NIM : 8683
+Nama : alya
+Kelas : 1F
+IPK : 3.6
 
+Data mahasiswa ke- 2
+NIM : 9726
+Nama : cindy
+Kelas : 1F
+IPK : 3.8
+
+Data mahasiswa ke- 3
+NIM : 6384
+Nama : athia
+Kelas : 1F
+IPK : 3.9
+
+Data mahasiswa sebelum sorting:
+Nama: alya
+NIM: 8683
+Kelas: 1F
+IPK: 3.6
+-----------------------------
+Nama: cindy
+NIM: 9726
+Kelas: 1F
+IPK: 3.8
+-----------------------------
+Nama: athia
+NIM: 6384
+Kelas: 1F
+IPK: 3.9
+-----------------------------
+Data Mahasiswa setelah sorting berdasarkan IPK (DESC) :
+Nama: athia
+NIM: 6384
+Kelas: 1F
+IPK: 3.9
+-----------------------------
+Nama: cindy
+NIM: 9726
+Kelas: 1F
+IPK: 3.8
+-----------------------------
+Nama: alya
+NIM: 8683
+Kelas: 1F
+IPK: 3.6
+-----------------------------
+```
 
 
 
