@@ -62,5 +62,79 @@ data[j+1] = data [j]
 
 ## Praktikum 2- (Sorting Menggunakan Array of Object)
 
+Hasil Run :
+```java
+Data mahasiswa sebelum sorting: 
+Nama: Zidan
+NIM: 123
+Kelas: 2A
+IPK: 3.2
+-----------------------------
+Nama: Ayu
+NIM: 124
+Kelas: 2A
+IPK: 3.5
+-----------------------------
+Nama: Sofi
+NIM: 125
+Kelas: 2A
+IPK: 3.1
+-----------------------------
+Nama: Sita
+NIM: 126
+Kelas: 2A
+IPK: 3.9
+-----------------------------
+Nama: Miki
+NIM: 127
+Kelas: 2A
+IPK: 3.7
+-----------------------------
+Data Mahasiswa setelah sorting berdasarkan IPK (DESC) :
+Nama: Sita
+NIM: 126
+Kelas: 2A
+IPK: 3.9
+-----------------------------
+Nama: Miki
+NIM: 127
+Kelas: 2A
+IPK: 3.7
+-----------------------------
+Nama: Ayu
+NIM: 124
+Kelas: 2A
+IPK: 3.5
+-----------------------------
+Nama: Zidan
+NIM: 123
+Kelas: 2A
+IPK: 3.2
+-----------------------------
+Nama: Sofi
+NIM: 125
+Kelas: 2A
+IPK: 3.1
+-----------------------------
+```
+
+### 5.3.4 Pertanyaan
+1. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
+```java
+  for (int i = 0; i < listMhs.length - 1; i++) {
+            for (int j = 1; j < listMhs.length - i; j++) {}}
+```
+a. Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ?
+- Karena setelah n-1 tahap, semua data sudah pasti terurut
+b. Mengapa syarat dari perulangan j adalah j<listMhs.length-i ?
+- Karena setiap tahap elemen terbesar akan menggelembung ke posisi paling akhir, jadi bagian belakang tidak perlu dicek lagi
+c. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan
+berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?
+- perulangan i akan berlangsung selama 49 kali yaitu 0 sampai 48
+2. Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad)
+yang terdiri dari nim, nama, kelas, dan ipk!
+
+
+
 
 
