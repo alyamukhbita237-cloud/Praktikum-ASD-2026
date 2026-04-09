@@ -326,7 +326,62 @@ Kelas: 2c
 IPK: 3.8
 -----------------------------
 ```
+### 5.4.3 Pertanyaan
 
+Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting
+dengan cara descending
+- Kode Program
+```java
+void insertionSortDescending(){
+        for (int i = 1; i < listMhs.length; i++) {
+            Mahasiswa03 temp = listMhs[i];
+            int j = i;
+            while (j > 0 && listMhs[j-1].ipk < temp.ipk) {
+                listMhs[j] = listMhs [j-1];
+                j--;
+            }
+            listMhs[j]=temp;
+        }
+    }
+```
+- Hasil Running
+```java
+Masukkan jumlah mahasiswa: 3
+Data mahasiswa ke- 1
+NIM : 7532 
+Nama : alya
+Kelas : 1F
+IPK : 3.7
+--------------------
+Data mahasiswa ke- 2
+NIM : 7425
+Nama : cindy
+Kelas : 1F
+IPK : 3.6
+--------------------
+Data mahasiswa ke- 3
+NIM : 7825
+Nama : athia
+Kelas : 1F
+IPK : 3.8
+--------------------
+Data yang sudah terurut menggunakan INSERTION SORT (DESC)
+Nama: athia
+NIM: 7825
+Kelas: 1F
+IPK: 3.8
+-----------------------------
+Nama: alya
+NIM: 7532
+Kelas: 1F
+IPK: 3.7
+-----------------------------
+Nama: cindy
+NIM: 7425
+Kelas: 1F
+IPK: 3.6
+-----------------------------
+```
 
 
 
