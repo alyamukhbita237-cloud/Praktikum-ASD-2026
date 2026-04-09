@@ -35,7 +35,7 @@ data[j] = data[j - 1];
 data[j - 1] = temp;
 }
 ```
-    - kode diatas berfungsi untuk menukar kedua elemen bersebelahan untuk mengurutkan data
+- kode diatas berfungsi untuk menukar kedua elemen bersebelahan untuk mengurutkan data
 
 2.  Tunjukkan kode program yang merupakan algoritma pencarian nilai minimum pada selection sort!
 ```java
@@ -52,13 +52,13 @@ for (int i = 0; i < jumData - 1; i++) {
 ```java
 while (j>=0 && data[j]>temp)
 ```
-    - selama j lebih besar atau sama dengan 0 dan data [j] lebih besar dari temp maka program akan dijalankan yaitu digeser ke sebelah kanan
+- selama j lebih besar atau sama dengan 0 dan data [j] lebih besar dari temp maka program akan dijalankan yaitu digeser ke sebelah kanan
 
 4. . Pada Insertion sort, apakah tujuan dari perintah
 ```java
 data[j+1] = data [j]
 ```
-    - untuk menggeser elemen ke sebelah kanan dan memberi ruang untuk menyisipkan nilai untuk membantu proses pengurutan nilai
+- untuk menggeser elemen ke sebelah kanan dan memberi ruang untuk menyisipkan nilai untuk membantu proses pengurutan nilai
 
 ## Praktikum 2- (Sorting Menggunakan Array of Object)
 
