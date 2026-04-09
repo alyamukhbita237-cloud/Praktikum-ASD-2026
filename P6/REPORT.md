@@ -382,6 +382,165 @@ Kelas: 1F
 IPK: 3.6
 -----------------------------
 ```
+## Latihan Praktikum
+- Hasil Running
+```java
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 1
+Kode : 7426
+Nama : alya
+Jenis Kelamin Laki-Laki? (Y/N) : n
+Usia : 37
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 1
+Kode : 4873
+Nama : cindy
+Jenis Kelamin Laki-Laki? (Y/N) : n
+Usia : 39
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 1
+Kode : 76239
+Nama : latif
+Jenis Kelamin Laki-Laki? (Y/N) : y
+Usia : 40
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 2
+Kode: 7426
+Nama: alya
+Jenis Kelamin Laki-laki ? : false
+Usia: 37
+-----------------------
+Kode: 4873
+Nama: cindy
+Jenis Kelamin Laki-laki ? : false
+Usia: 39
+-----------------------
+Kode: 76239
+Nama: latif
+Jenis Kelamin Laki-laki ? : true
+Usia: 40
+-----------------------
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 3
+Data diurutkan ASC
+Kode: 7426
+Nama: alya
+Jenis Kelamin Laki-laki ? : false
+Usia: 37
+-----------------------
+Kode: 4873
+Nama: cindy
+Jenis Kelamin Laki-laki ? : false
+Usia: 39
+-----------------------
+Kode: 76239
+Nama: latif
+Jenis Kelamin Laki-laki ? : true
+Usia: 40
+-----------------------
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 4
+Data diurutkan DSC
+Kode: 76239
+Nama: latif
+Jenis Kelamin Laki-laki ? : true
+Usia: 40
+-----------------------
+Kode: 4873
+Nama: cindy
+Jenis Kelamin Laki-laki ? : false
+Usia: 39
+-----------------------
+Kode: 7426
+Nama: alya
+Jenis Kelamin Laki-laki ? : false
+Usia: 37
+-----------------------
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 5
+Data diurutkan Insertion
+Kode: 76239
+Nama: latif
+Jenis Kelamin Laki-laki ? : true
+Usia: 40
+-----------------------
+Kode: 4873
+Nama: cindy
+Jenis Kelamin Laki-laki ? : false
+Usia: 39
+-----------------------
+Kode: 7426
+Nama: alya
+Jenis Kelamin Laki-laki ? : false
+Usia: 37
+-----------------------
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC
+4. Sorting DSC
+5. Insertion Sort
+0. Keluar
+
+Pilih: 0
+Keluar Program !
+```
 
 
 
