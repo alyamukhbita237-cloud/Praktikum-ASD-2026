@@ -38,15 +38,15 @@ data[j - 1] = temp;
     - kode diatas berfungsi untuk menukar kedua elemen bersebelahan untuk mengurutkan data
 
 2.  Tunjukkan kode program yang merupakan algoritma pencarian nilai minimum pada selection sort!
-    - ```java
-    for (int i = 0; i < jumData - 1; i++) {
-            int min = i;
-            for (int j = i + 1; j < jumData; j++) {
-                if (data[j] < data[min]) {
-                    min = j;
-                }
+```java
+for (int i = 0; i < jumData - 1; i++) {
+        int min = i;
+        for (int j = i + 1; j < jumData; j++) {
+            if (data[j] < data[min]) {
+                min = j;
             }
-    ```
+        }
+```
 
 3. Pada Insertion sort , jelaskan maksud dari kondisi pada perulangan
 ```java
