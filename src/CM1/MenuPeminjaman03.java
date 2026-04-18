@@ -28,7 +28,7 @@ public class MenuPeminjaman03 {
         Peminjaman03[] dataPeminjaman = {
                 new Peminjaman03(listMhs[0], listBuku[0], 7),
                 new Peminjaman03(listMhs[1], listBuku[1], 3),
-                new Peminjaman03(listMhs[2], listBuku[2], 10),
+                new Peminjaman03(listMhs[2], listBuku[2], 15),
                 new Peminjaman03(listMhs[2], listBuku[3], 6),
                 new Peminjaman03(listMhs[0], listBuku[1], 4) };
         int pilihMenu;
@@ -78,12 +78,17 @@ public class MenuPeminjaman03 {
                 System.out.print("Masukkan NIM : ");
                 String cariNIM = alya.nextLine();
     
-                boolean ketemu = false;
+                boolean ketemu = false; // jawaban sesi 4b modifikasi penambahan atribut isCanceled untuk menghapus data dan tidak menampilkan data jika isCanceled = true
+                boolean isCanceled = false;
 
                 for (int i = 0; i < dataPeminjaman.length; i++) {
                     if (dataPeminjaman[i].mhs.nim.equals(cariNIM)) {
                         dataPeminjaman[i].tampilPeminjaman();
                         ketemu = true;
+                        if (ketemu == true ) {
+                            isCanceled = true;
+                            System.out.println("Data dihapus");
+                        }
                     }
                 }
                 if (!ketemu) {

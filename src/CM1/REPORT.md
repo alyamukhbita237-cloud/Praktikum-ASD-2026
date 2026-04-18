@@ -94,4 +94,3 @@ Screenshoot Hasil Running
 ![Screenshoot](images/ss2.png)
 ![Screenshoot](images/ss3.png)
 
-a
