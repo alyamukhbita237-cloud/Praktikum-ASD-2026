@@ -14,6 +14,8 @@ public class MahasiswaDemo03 {
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("5. Melihat Tugas Terbawah");
+            System.out.println("6. Jumlah Tugas Terkumpul");
             System.out.print("Pilih : ");
             pilih = alya.nextInt();
             alya.nextLine();
@@ -32,7 +34,7 @@ public class MahasiswaDemo03 {
                 case 2:
                     Mahasiswa03 dinilai = stack.pop();
                     if (dinilai != null) {
-                        System.out.println("Menilai tugas dari "+ dinilai.nama);
+                        System.out.println("Menilai tugas dari " + dinilai.nama);
                         System.out.print("Masukkan nilai (0-100): ");
                         int nilai = alya.nextInt();
                         dinilai.tugasDinilai(nilai);
@@ -42,18 +44,27 @@ public class MahasiswaDemo03 {
                 case 3:
                     Mahasiswa03 lihat = stack.peek();
                     if (lihat != null) {
-                        System.out.println("Tugas terakhir dikumpulkan oleh "+lihat.nama);
+                        System.out.println("Tugas terakhir dikumpulkan oleh " + lihat.nama);
                     }
                     break;
-                case 4: 
+                case 4:
                     System.out.println("Daftar semua tugas ");
                     System.out.println("Nama\tNIM\tKelas ");
-                    stack.print ();
+                    stack.print();
+                    break;
+                case 5:
+                    Mahasiswa03 m = stack.peekBottom();
+                    if (m != null) {
+                        System.out.println("Tugas pertama dikumpulkan oleh " + m.nama);
+                    }
+                    break;
+                case 6:
+                    System.out.println("Jumlah tugas yang sudah terkumpul : " + stack.count());
                     break;
                 default:
                     System.out.println("Pilihan tidak valid. ");
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 6);
     }
 
 }
