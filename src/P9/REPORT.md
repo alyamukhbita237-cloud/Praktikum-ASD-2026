@@ -426,3 +426,89 @@ Pilihan tidak valid.
 bagaimana hasilnya? Jelaskan alasannya!
 - akan terjadi error karena variabel kode tidak pernah di deklarasikan, kecuali variabel kode menggantikan variabel nilai, hasilnya akan tetap sama
 
+## 2.4 Latihan Praktikum
+
+```java
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 1
+ID Surat: 1001
+Nama: alya
+Kelas: 2f
+Jenis Izin (S/I): i
+Durasi: 1
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 1
+ID Surat: 1002
+Nama: cindy
+Kelas: 2f
+Jenis Izin (S/I): i
+Durasi: 1
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 1
+ID Surat: 1003
+Nama: latif
+Kelas: 2f
+Jenis Izin (S/I): i
+Durasi: 1
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 2
+Verifikasi Surat 
+ID Surat        Nama    Kelas   Jenis Izin      Durasi 
+1001            alya    2f      i               1
+1002            cindy   2f      i               1
+1003            latif   2f      i               1
+ 
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 3
+Surat terakhir di input pada mahasiswa  latif
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 4
+Cari nama: alya
+Surat ditemukan!
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 4
+Cari nama: athia
+Surat tidak ditemukan!
+
+Menu : 
+1. Masukkan Data Surat
+2. Memverifikasi Surat
+3. Melihat Surat Teratas
+4. Cari Surat Berdasarkan Nama Mahasiswa
+Pilih : 5
+Pilihan Tidak Valid!
+```
