@@ -350,3 +350,79 @@ Pilih : 7
 Pilihan tidak valid. 
 ```
 6. Commit dan push kode program ke Github
+
+## 2.2 Percobaan 2: Konversi Nilai Tugas ke Biner 
+
+Hasil Running :
+
+```java
+Menu : 
+1. Mengumpulkan Tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Daftar Tugas
+5. Melihat Tugas Terbawah
+6. Jumlah Tugas Terkumpul
+Pilih : 1
+Nama    : dila
+NIM     : 1001
+Kelas   : 1f
+Tugas dila berhasil dikumpulkan
+ 
+Menu : 
+1. Mengumpulkan Tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Daftar Tugas
+5. Melihat Tugas Terbawah
+6. Jumlah Tugas Terkumpul
+Pilih : 1
+Nama    : erik
+NIM     : 1002
+Kelas   : 1f
+Tugas erik berhasil dikumpulkan
+ 
+Menu : 
+1. Mengumpulkan Tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Daftar Tugas
+5. Melihat Tugas Terbawah
+6. Jumlah Tugas Terkumpul
+Pilih : 1
+Nama    : tika
+NIM     : 1003
+Kelas   : 1f
+Tugas tika berhasil dikumpulkan
+ 
+Menu : 
+1. Mengumpulkan Tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Daftar Tugas
+5. Melihat Tugas Terbawah
+6. Jumlah Tugas Terkumpul
+Pilih : 2
+Menilai tugas dari tika
+Masukkan nilai (0-100): 87
+Nilai Tugas tika adalah 87
+Nilai Biner Tugas: 1010111
+
+Menu : 
+1. Mengumpulkan Tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Daftar Tugas
+5. Melihat Tugas Terbawah
+6. Jumlah Tugas Terkumpul
+Pilih : 7
+Pilihan tidak valid.
+```
+### 2.2.3 Pertanyaan
+
+1. Jelaskan alur kerja dari method konversiDesimalKeBiner!
+- method konversiDesimalKeBiner bekerja dengan cara membagi bilangan desimal secara berulang dengan 2 dan menyimpan sisa pembagian ke dalam stack. karena stack bersifat LIFO, saat data diambil kembali menggunakan operasi pop, urutan sisa menjadi terbalik sehingga menghasilkan representasi bilangan biner yang benar.
+2. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0),
+bagaimana hasilnya? Jelaskan alasannya!
+- akan terjadi error karena variabel kode tidak pernah di deklarasikan, kecuali variabel kode menggantikan variabel nilai, hasilnya akan tetap sama
+
