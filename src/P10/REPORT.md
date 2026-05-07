@@ -108,3 +108,148 @@ if (IsEmpty()) {
     System.exit(0);
 }
 ```
+
+## 2.2 Percobaan 2 : Antrian Layanan Akademik
+
+Hasil Run :
+```java
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+0. Keluar
+Pilih Menu: 1
+NIM   : 123
+Nama  : Aldi
+Prodi : TI
+Kelas : 1A
+Aldi berhasil masuk ke antrian.
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+0. Keluar
+Pilih Menu: 1
+NIM   : 124
+Nama  : Bobi
+Prodi : TI
+Kelas : 1G
+Bobi berhasil masuk ke antrian.
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+0. Keluar
+Pilih Menu: 4
+Daftar Mahasiswa dalam Antrian: 
+NIM - NAMA - PRODI - KELAS
+1. 123 - Aldi - TI - 1A
+2. 124 - Bobi - TI - 1G
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+0. Keluar
+Pilih Menu: 2
+Melayani mahasiswa: 123 - Aldi - TI - 1A
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+0. Keluar
+Pilih Menu: 4
+Daftar Mahasiswa dalam Antrian: 
+NIM - NAMA - PRODI - KELAS
+1. 124 - Bobi - TI - 1G
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+0. Keluar
+Pilih Menu: 5
+Jumlah dalam antrian: 1
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+0. Keluar
+Pilih Menu: 0
+Terima kasih.
+```
+### 2.2.3 Pertanyaan
+- Hasil Running modifikasi kode program 
+
+```java
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih Menu: 1
+NIM   : 123
+Nama  : alya
+Prodi : ti
+Kelas : 1f
+alya berhasil masuk ke antrian.
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih Menu: 1
+NIM   : 125
+Nama  : cindy
+Prodi : ti
+Kelas : 1f
+cindy berhasil masuk ke antrian.
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih Menu: 6
+Antrian paling belakang: 
+125 - cindy - ti - 1f
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan 
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih Menu: 0
+Terima kasih
+```
