@@ -88,3 +88,23 @@ if (IsFull()) {
 7. Pada saat terjadi queue overflow dan queue underflow, program tersebut tetap dapat berjalan
 dan hanya menampilkan teks informasi. Lakukan modifikasi program sehingga pada saat terjadi
 queue overflow dan queue underflow, program dihentikan!
+- kode program sebelum di modifikasi
+```java
+if (IsFull()) {
+    System.out.println("Queue penuh");
+}
+if (IsEmpty()) {
+    System.out.println("Queue masih kosong");
+}
+```
+- kode program setelah di modifikasi
+```java
+if (IsFull()) {
+    System.out.println("Queue sudah penuh, Program dihentikan.");
+    System.exit(0);
+    }
+if (IsEmpty()) {
+    System.out.println("Queue masih kosong, Program dihentikan.");
+    System.exit(0);
+}
+```
