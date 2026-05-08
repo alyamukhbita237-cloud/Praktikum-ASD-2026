@@ -57,3 +57,32 @@ Isi Linked List:
 alya            123     1f      3.8
 stepen          124     1f      3.7
 ```
+
+## 2.2 Modifikasi Elemen pada Single Linked List
+
+Hasil Run:
+```java
+data index 1 : 
+cintia          125     1f      3.5
+data mahasiswa an Bimon berada pada index : 2
+
+Isi Linked List:
+cintia          125     1f      3.5
+bimon           125     1f      3.8
+
+Isi Linked List:
+bimon           125     1f      3.8
+```
+
+### 2.2.3 Pertanyaan
+
+1. Mengapa digunakan keyword break pada fungsi remove? Jelaskan!
+- Keyword break digunakan untuk menghentikan proses perulangan setelah data yang dicari berhasil ditemukan dan dihapus. Jika break tidak digunakan, perulangan akan tetap berjalan meskipun data sudah berhasil dihapus.
+2. Jelaskan kegunaan kode dibawah pada method remove
+```java
+temp.next = temp.next.next;
+if (temp.next == null){
+    tail = temp;
+}
+```
+- temp.next = temp.next.next, digunakan untuk melewati node yang akan dihapus. tail = temp, digunakan untuk memperbarui node terakhir jika node yang dihapus adalah tail.
