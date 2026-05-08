@@ -1,18 +1,22 @@
 package P10;
 
-public class AntrianLayanan {
-    Mahasiswa03[] data;
+import P5.Mahasiswa;
+
+public class AntrianKRS {
+    MahasiswaKRS03[] data;
     int front;
     int rear;
     int size;
     int max;
+    int jmlDiproses;
+    int totalMahasiswa = 30;
 
-    public AntrianLayanan(int max) {
-        this.max = max;
-        this.data = new Mahasiswa03[max];
-        this.front = 0;
-        this.rear = -1;
-        this.size = 0;
+    public AntrianKRS(int n) {
+        max = n;
+        data = new MahasiswaKRS03[max];
+        size = 0;
+        front = rear = -1;
+        jmlDiproses = 0;
     }
 
     public boolean IsEmpty() {
@@ -41,34 +45,38 @@ public class AntrianLayanan {
         }
     }
 
-    public void tambahAntrian(Mahasiswa03 mhs) {
+    public void tambahAntrian(MahasiswaKRS03 mhs) {
         if (IsFull()) {
             System.out.println("Antrian penuh, tidak dapat menambah mahasiswa.");
+            return;
         }
-        rear = (rear + 1) % max;
+        if (IsEmpty()) {
+            front = rear = 0;
+        } else {
+            rear = (rear + 1) % max;
+        }
         data[rear] = mhs;
         size++;
         System.out.println(mhs.nama + " berhasil masuk ke antrian.");
     }
 
-    public Mahasiswa03 layaniMahasiswa() {
-        if (IsEmpty()) {
-            System.out.println("Antrian kosong.");
-            return null;
-        }
-        Mahasiswa03 mhs = data[front];
-        front = (front + 1) % max;
-        size--;
-        return mhs;
-    }
-
-    public void lihatTerdepan() {
-        if (IsEmpty()) {
-            System.out.println("Antrian kosong.");
+    public void dequeue2() {
+        if (size < 2) {
+            System.out.println("Antrian kurang dari 2 mahasiswa");
         } else {
-            System.out.print("Mahasiswa terdepan: ");
-            System.out.println("NIM - NAMA - PRODI - KELAS");
-            data[front].tampilkanData();
+            System.out.println("Mahasiswa diproses KRS:");
+
+            for (int i = 0; i < 2; i++) {
+                data[front].tampilkanData();
+
+                front = (front + 1) % max;
+                size--;
+                jmlDiproses++;
+            }
+
+            if (size == 0) {
+                front = rear = -1;
+            }
         }
     }
 
@@ -91,6 +99,20 @@ public class AntrianLayanan {
         return size;
     }
 
+    public void lihat2Terdepan() {
+        if (IsEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.print("2 Mahasiswa terdepan: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[front].tampilkanData();
+            int kedua = (front + 1) % max;
+            if (size > 1) {
+                data[kedua].tampilkanData();
+            }
+        }
+    }
+
     public void lihatAkhir() {
         if (!IsEmpty()) {
             System.out.println("Antrian paling belakang: ");
@@ -99,4 +121,13 @@ public class AntrianLayanan {
             System.out.println("Antrian masih kosong");
         }
     }
+
+    public void jumlahDiproses() {
+        System.out.println("Jumlah mahasiswa sudah proses KRS : " + jmlDiproses);
+    }
+
+    public void belumProses() {
+        System.out.println("Belum proses KRS : " + (totalMahasiswa - jmlDiproses));
+    }
+
 }
