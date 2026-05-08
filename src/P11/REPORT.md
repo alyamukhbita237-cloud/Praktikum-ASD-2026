@@ -35,4 +35,25 @@ Alvaro          24212200        1A      4.0
 - variabel temp digunakan sebagai pointer sementara untuk menelusuri node pada linked list tanpa mengubah posisi head.
 
 3. Lakukan modifikasi agar data dapat ditambahkan dari keyboard!
--
+- Hasil Run
+```java
+Masukkan jumlah mahasiswa: 2
+
+Data Mahasiswa ke- 1
+NIM   : 123
+Nama  : alya
+Kelas : 1f
+IPK   : 3.8
+Isi Linked List:
+alya            123     1f      3.8
+
+
+Data Mahasiswa ke- 2
+NIM   : 124
+Nama  : stepen
+Kelas : 1f
+IPK   : 3.7
+Isi Linked List:
+alya            123     1f      3.8
+stepen          124     1f      3.7
+```
