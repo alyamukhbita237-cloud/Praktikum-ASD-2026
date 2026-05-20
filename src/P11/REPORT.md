@@ -86,3 +86,181 @@ if (temp.next == null){
 }
 ```
 - temp.next = temp.next.next, digunakan untuk melewati node yang akan dihapus. tail = temp, digunakan untuk memperbarui node terakhir jika node yang dihapus adalah tail.
+
+# Tugas 
+```java
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 1
+
+--- Tambah Antrian ---
+Masukkan NIM  : 2541
+Masukkan Nama : ALya
+Mahasiswa berhasil ditambahkan!
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 1
+
+--- Tambah Antrian ---
+Masukkan NIM  : 1256
+Masukkan Nama : laras
+Mahasiswa berhasil ditambahkan!
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 2
+
+--- Panggil Antrian ---
+Dipanggil : 
+ALya            2541
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 1
+
+--- Tambah Antrian ---
+Masukkan NIM  : 198
+Masukkan Nama : cindy
+Mahasiswa berhasil ditambahkan!
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 3
+
+--- Daftar Antrian ---
+laras           1256
+cindy           198
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 4
+
+--- Antrian Terdepan ---
+laras           1256
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 5
+
+--- Antrian Terakhir ---
+cindy           198
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 6
+
+Jumlah mahasiswa mengantre : 2
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 7
+
+Antrian berhasil dikosongkan
+
+=================================
+      MENU ANTRIAN MAHASISWA     
+=================================
+1. Tambah Antrian
+2. Panggil Antrian
+3. Tampilkan Antrian
+4. Tampilkan Antrian Depan
+5. Tampilkan Antrian Belakang
+6. Jumlah Antrian
+7. Kosongkan Antrian
+0. Keluar
+=================================
+Pilih menu : 0
+
+Program selesai
+```
