@@ -191,4 +191,241 @@ public void printReverse() {
         }
     }
 ```
+## Percobaan 2
+```java
+==== MENU DOUBLE LINKED LIST ====
+1. Tambah data di awal
+2. Tambah data di akhir
+3. Sisipkan data di tengah (setelah NIM)
+4. Hapus data di awal
+5. Hapus data di akhir
+6. Tampilkan data
+7. Tampilkan Data Terbalik
+0. Keluar
+Pilih Menu : 5
+Data berhasil dihapus.
+NIM        : 123010
+Nama     : Potter
+Kelas    : 1B
+IPK      : 3.55
+
+==== MENU DOUBLE LINKED LIST ====
+1. Tambah data di awal
+2. Tambah data di akhir
+3. Sisipkan data di tengah (setelah NIM)
+4. Hapus data di awal
+5. Hapus data di akhir
+6. Tampilkan data
+7. Tampilkan Data Terbalik
+0. Keluar
+Pilih Menu : 6
+NIM        : 123005
+Nama     : Harry
+Kelas    : 1A
+IPK      : 3.76
+```
+
+### 12.3.3 Pertanyaan
+1. Jelaskan fungsi masing-masing statement tersebut pada proses penghapusan node!
+- head = head.next; digunakan untuk menggeser head ke node berikutnya sehingga node pertama lama tidak lagi menjadi head.
+- head.prev = null; digunakan untuk memutus hubungan antara head baru dengan node yang dihapus, sehingga head baru tidak memiliki referensi ke node sebelumnya dan struktur Double Linked List tetap valid.
+
+2. Modifikasi method removeFirst() dan removeLast() agar program menampilkan data
+yang berhasil dihapus!
+```java
+public void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong.");
+            return;
+        } 
+
+        Node03 deleted = head; 
+
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+
+        System.out.println("Data berhasil dihapus.");
+        deleted.data.tampil();
+    }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong.");
+            return;
+        } 
+
+        Node03 deleted = tail;
+        
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
+
+        System.out.println("Data berhasil dihapus.");
+        deleted.data.tampil();
+    }
+```
+## 12.5 Tugas Praktikum
+1. Tambahkan method add(int index, Mahasiswa data) untuk menambahkan node pada indeks
+tertentu!
+```java
+public void add(int index, Mahasiswa03 data) {
+        if (index < 0 || index > size) {
+            System.out.println("Index tidak valid!");
+            return;
+        }
+        if (index == 0) {
+            addFirst(data);
+            return;
+        }
+        if (index == size) {
+            addLast(data);
+            return;
+        }
+        Node03 current = head;
+
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        Node03 newNode = new Node03(data);
+        current.prev.next = newNode;
+        current.prev = newNode;
+
+        size++;
+    }
+```
+
+2. Tambahkan method removeAfter() untuk menghapus node setelah node yang memiliki data
+key tertentu!
+```java
+public void removeAfter(String nim) {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+            return;
+        }
+
+        Node03 current = head;
+
+        while (current != null &&
+                !current.data.nim.equals(nim)) {
+            current = current.next;
+        }
+        if (current == null) {
+            System.out.println("Data tidak ditemukan");
+            return;
+        }
+        if (current.next == null) {
+            System.out.println("Tidak ada node setelah data tersebut");
+            return;
+        }
+
+        Node03 deleted = current.next;
+
+        if (deleted == tail) {
+            tail = current;
+            tail.next = null;
+        } else {
+            current.next = deleted.next;
+            deleted.next.prev = current;
+        }
+
+        System.out.println("Data berhasil dihapus:");
+        deleted.data.tampil();
+
+        size--;
+    }
+```
+
+3. Tambahkan method remove(int index) untuk menghapus node pada indeks tertentu!
+```java
+public void remove(int index) {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+            return;
+        }
+        if (index < 0 || index >= size) {
+            System.out.println("Index tidak valid");
+            return;
+        }
+        if (index == 0) {
+            removeFirst();
+            return;
+        }
+        if (index == size - 1) {
+            removeLast();
+            return;
+        }
+        Node03 current = head;
+
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        current.prev.next = current.next;
+        current.next.prev = current.prev;
+        System.out.println("Data berhasil dihapus:");
+        current.data.tampil();
+
+        size--;
+    }
+```
+
+4. Tambahkan method:
+a. getFirst()
+b. getLast()
+c. getIndex()
+untuk menampilkan data pada node pertama, node terakhir, dan node pada indeks tertentu.
+```java
+public void getFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+            return;
+        }
+
+        System.out.println("Data pertama:");
+        head.data.tampil();
+    }
+
+    public void getLast() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+            return;
+        }
+
+        System.out.println("Data terakhir:");
+        tail.data.tampil();
+    }
+
+    public void getIndex(int index) {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+            return;
+        }
+        if (index < 0 || index >= size) {
+            System.out.println("Index tidak valid");
+            return;
+        }
+        Node03 current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        System.out.println("Data pada index " + index + ":");
+        current.data.tampil();
+    }
+```
+
+5. Tambahkan atribut dan method untuk menghitung jumlah data (size) pada Double Linked List.
+```java
+public int size() {
+        return size;
+    }
+```
+
+
+
 
