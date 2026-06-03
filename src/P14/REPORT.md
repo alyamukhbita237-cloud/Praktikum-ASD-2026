@@ -88,4 +88,43 @@ secara detil untuk apa baris program tersebut?
 anak. Bagaimana method getSuccessor() membantu dalam proses ini?
 - Saat menghapus node yang memiliki dua anak, method delete() menggunakan getSuccessor() untuk mencari node terkecil pada subtree kanan. Node successor tersebut kemudian menggantikan posisi node yang dihapus sehingga urutan data pada Binary Search Tree tetap terjaga. Method getSuccessor() membantu dengan mencari successor, melepaskannya dari posisi lama, dan menyesuaikan hubungan antar node sebelum successor ditempatkan pada posisi node yang dihapus.
 
+## 14.3.1 Percobaan 2
+
+Hasil Run :
+```java
+Inorder Traversal Mahasiswa: 
+NIM: 244160220 Nama: Dewi Kelas: B IPK: 3.35
+NIM: 244160185 Nama: Candra Kelas: C IPK: 3.41
+NIM: 244160131 Nama: Devi Kelas: A IPK: 3.48
+NIM: 244160121 Nama: Ali Kelas: A IPK: 3.57
+NIM: 244160205 Nama: Ehsan Kelas: D IPK: 3.61
+NIM: 244160221 Nama: Badar Kelas: B IPK: 3.75
+NIM: 244160170 Nama: Fizi Kelas: B IPK: 3.86
+```
+
+### 14.3.2 Pertanyaan Percobaan
+
+1. Apakah kegunaan dari atribut data dan idxLast yang ada di class BinaryTreeArray?
+- atribut data digunakan untuk menyimpan seluruh node atau nilai yang ada dalam binary tree dalam bentuk array, sedangkan atribut idxLast digunakan untuk menyimpan indeks terakhir yang terisi pada array data.
+
+2. Apakah kegunaan dari method populateData()?
+- Method populateData() digunakan untuk mengisi data binary tree yang disimpan dalam array sekaligus menentukan indeks terakhir yang berisi data.
+
+3. Apakah kegunaan dari method traverseInOrder()?
+- Method traverseInOrder() digunakan untuk menelusuri (traversal) seluruh node pada Binary Tree dengan urutan InOrder.
+
+4. Jika suatu node binary tree disimpan dalam array indeks 2, maka di indeks berapakah posisi
+left child dan right child masing-masing?
+- Left child = 2 * i + 1 = 2 × 2 + 1 = 5
+- Right child = 2 * i + 2 = 2 × 2 + 2 = 6
+
+5. Apa kegunaan statement int idxLast = 6 pada praktikum 2 percobaan nomor 4?
+- berfungsi untuk menandai bahwa indeks terakhir yang berisi data pada array Binary Tree adalah indeks ke-6.
+
+6. Mengapa indeks 2*idxStart+1 dan 2*idxStart+2 digunakan dalam pemanggilan
+rekursif, dan apa kaitannya dengan struktur pohon biner yang disusun dalam array?
+- penggunaan indeks 2*idxStart+1 dan 2*idxStart+2 berkaitan langsung dengan cara penyimpanan Binary Tree dalam array, di mana hubungan parent-child ditentukan oleh rumus indeks tersebut. Dengan cara ini, program dapat menelusuri struktur pohon menggunakan array tanpa perlu menyimpan referensi left dan right pada setiap node.
+
+
+
 
