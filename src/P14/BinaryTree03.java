@@ -96,29 +96,29 @@ public class BinaryTree03 {
             System.out.println("Binary tree kosong");
             return;
         }
-        //cari node (current) yang akan dihapus
+        // cari node (current) yang akan dihapus
         Node03 parent = root;
         Node03 current = root;
         boolean isLeftChild = false;
         while (current != null) {
             if (current.mahasiswa.ipk == ipk) {
                 break;
-            } else if (ipk < current.mahasiswa.ipk){
+            } else if (ipk < current.mahasiswa.ipk) {
                 parent = current;
                 current = current.left;
                 isLeftChild = true;
-            } else if (ipk > current.mahasiswa.ipk){
+            } else if (ipk > current.mahasiswa.ipk) {
                 parent = current;
                 current = current.right;
                 isLeftChild = false;
             }
         }
-        //penghapusan
+        // penghapusan
         if (current == null) {
             System.out.println("Data tidak ditemukan");
             return;
-        }else{
-            //jika tidak ada anak (leaf), maka node dihapus
+        } else {
+            // jika tidak ada anak (leaf), maka node dihapus
             if (current.left == null && current.right == null) {
                 if (current == root) {
                     root = null;
@@ -129,7 +129,7 @@ public class BinaryTree03 {
                         parent.right = null;
                     }
                 }
-            } else if (current.left == null ){//jika hanya punya 1 anak (kanan)
+            } else if (current.left == null) {// jika hanya punya 1 anak (kanan)
                 if (current == root) {
                     root = current.right;
                 } else {
@@ -139,7 +139,7 @@ public class BinaryTree03 {
                         parent.right = current.right;
                     }
                 }
-            } else if (current.right == null){ // jika hanya punya 1 anak (kiri)
+            } else if (current.right == null) { // jika hanya punya 1 anak (kiri)
                 if (current == root) {
                     root = current.left;
                 } else {
@@ -149,7 +149,7 @@ public class BinaryTree03 {
                         parent.right = current.left;
                     }
                 }
-            } else {//jika punya 2 anak
+            } else {// jika punya 2 anak
                 Node03 successor = getSuccessor(current);
                 System.out.println("Jika 2 anak, current = ");
                 successor.mahasiswa.tampilInformasi();
@@ -167,5 +167,57 @@ public class BinaryTree03 {
         }
     }
 
-    
+    public void addRekursif(Mahasiswa03 mahasiswa) {
+        root = addRekursif(root, mahasiswa);
+    }
+
+    public Node03 addRekursif(Node03 current, Mahasiswa03 mahasiswa) {
+        if (current == null) {
+            return new Node03(mahasiswa);
+        }
+        if (mahasiswa.ipk < current.mahasiswa.ipk) {
+            current.left = addRekursif(current.left, mahasiswa);
+        } else {
+            current.right = addRekursif(current.right, mahasiswa);
+        }
+        return current;
+    }
+
+    public void cariMinIPK() {
+        if (root == null) {
+            System.out.println("Tree kosong");
+            return;
+        }
+        Node03 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        current.mahasiswa.tampilInformasi();
+    }
+
+    public void cariMaxIPK() {
+        if (root == null) {
+            System.out.println("Tree kosong");
+            return;
+        }
+        Node03 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        current.mahasiswa.tampilInformasi();
+    }
+
+    public void tampilMahasiswaIPKdiAtas(double ipkBatas) {
+        tampilMahasiswaIPKdiAtas(root, ipkBatas);
+    }
+
+    public void tampilMahasiswaIPKdiAtas(Node03 node, double ipkBatas) {
+        if (node != null) {
+            tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
+            if (node.mahasiswa.ipk > ipkBatas) {
+                node.mahasiswa.tampilInformasi();
+            }
+            tampilMahasiswaIPKdiAtas(node.right, ipkBatas);
+        }
+    }
 }

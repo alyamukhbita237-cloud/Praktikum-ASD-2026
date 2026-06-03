@@ -125,6 +125,142 @@ left child dan right child masing-masing?
 rekursif, dan apa kaitannya dengan struktur pohon biner yang disusun dalam array?
 - penggunaan indeks 2*idxStart+1 dan 2*idxStart+2 berkaitan langsung dengan cara penyimpanan Binary Tree dalam array, di mana hubungan parent-child ditentukan oleh rumus indeks tersebut. Dengan cara ini, program dapat menelusuri struktur pohon menggunakan array tanpa perlu menyimpan referensi left dan right pada setiap node.
 
+## 14.4 Tugas Praktikum
+1. Buat method di dalam class BinaryTree00 yang akan menambahkan node dengan cara
+rekursif (addRekursif()).
+### Kode Program
+```java
+public void addRekursif(Mahasiswa03 mahasiswa) {
+    root = addRekursif(root, mahasiswa);
+}
+
+public Node03 addRekursif(Node03 current, Mahasiswa03 mahasiswa) {
+    if (current == null) {
+        return new Node03(mahasiswa);
+    }
+
+    if (mahasiswa.ipk < current.mahasiswa.ipk) {
+        current.left = addRekursif(current.left, mahasiswa);
+    } else {
+        current.right = addRekursif(current.right, mahasiswa);
+    }
+
+    return current;
+}
+```
+### Hasil Run
+```java
+Daftar semua mahasiswa (rekursif) : 
+NIM: 3 Nama: Candra Kelas: C IPK: 3.21
+NIM: 1 Nama: Ali Kelas: A IPK: 3.57
+NIM: 2 Nama: Badar Kelas: B IPK: 3.85
+```
+
+2. Buat method di dalam class BinaryTree00 untuk menampilkan data mahasiswa dengan IPK
+paling kecil dan IPK yang paling besar (cariMinIPK() dan cariMaxIPK()) yang ada di dalam
+binary search tree.
+### Kode Program
+```java
+    public void cariMinIPK() {
+        if (root == null) {
+            System.out.println("Tree kosong");
+            return;
+        }
+        Node03 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        current.mahasiswa.tampilInformasi();
+    }
+
+    public void cariMaxIPK() {
+        if (root == null) {
+            System.out.println("Tree kosong");
+            return;
+        }
+        Node03 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        current.mahasiswa.tampilInformasi();
+    }
+```
+### Hasil Run
+```java
+Mahasiswa dengan IPK terkecil:
+NIM: 244160185 Nama: Candra Kelas: C IPK: 3.21
+
+Mahasiswa dengan IPK terbesar:
+NIM: 244160221 Nama: Badar Kelas: B IPK: 3.85
+```
+
+3. Buat method dalam class BinaryTree00 untuk menampilkan data mahasiswa dengan IPK di
+atas suatu batas tertentu, misal di atas 3.50 (tampilMahasiswaIPKdiAtas(double ipkBatas))
+yang ada di dalam binary search tree.
+### Kode Program
+```java 
+public void tampilMahasiswaIPKdiAtas(double ipkBatas) {
+    tampilMahasiswaIPKdiAtas(root, ipkBatas);
+}
+
+public void tampilMahasiswaIPKdiAtas(Node03 node, double ipkBatas) {
+    if (node != null) {
+        tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
+        if (node.mahasiswa.ipk > ipkBatas) {
+            node.mahasiswa.tampilInformasi();
+        }
+        tampilMahasiswaIPKdiAtas(node.right, ipkBatas);
+    }
+}
+```
+### Hasil Run
+```java
+Mahasiswa dengan IPK di atas 3.50:
+NIM: 244160220 Nama: Dewi Kelas: D IPK: 3.54
+NIM: 244160131 Nama: Devi Kelas: A IPK: 3.72
+NIM: 244160221 Nama: Badar Kelas: B IPK: 3.85
+```
+
+4. Modifikasi class BinaryTreeArray00 di atas, dan tambahkan :
+• method add(Mahasiswa data) untuk memasukkan data ke dalam binary tree
+• method traversePreOrder()
+### Kode Program
+```java
+public void add(Mahasiswa03 data) {
+        if (idxLast < dataMahasiswa.length - 1) {
+            dataMahasiswa[++idxLast] = data;
+        } else {
+            System.out.println("Array penuh!");
+        }
+    }
+
+    void traversePreOrder(int idxStart) {
+        if (idxStart <= idxLast) {
+            if (dataMahasiswa[idxStart] != null) {
+
+                dataMahasiswa[idxStart].tampilInformasi();
+
+                traversePreOrder(2 * idxStart + 1);
+
+                traversePreOrder(2 * idxStart + 2);
+            }
+        }
+    }
+```
+
+### Hasil Run
+```java
+PreOrder Traversal Mahasiswa:
+NIM: 244160121 Nama: Ali Kelas: A IPK: 3.57
+NIM: 244160185 Nama: Candra Kelas: C IPK: 3.41
+NIM: 244160220 Nama: Dewi Kelas: B IPK: 3.35
+NIM: 244160131 Nama: Devi Kelas: A IPK: 3.48
+NIM: 244160221 Nama: Badar Kelas: B IPK: 3.75
+NIM: 244160205 Nama: Ehsan Kelas: D IPK: 3.61
+NIM: 244160170 Nama: Fizi Kelas: B IPK: 3.86
+```
+
+
 
 
 
