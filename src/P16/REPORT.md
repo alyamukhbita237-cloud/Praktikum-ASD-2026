@@ -26,6 +26,9 @@ Arraylist?
 2. Modifikasi baris kode 25-36 seingga data yang ditampung hanya satu jenis atau spesifik tipe
 tertentu!
 - 
+```java
+List<Integer> l = new ArrayList();
+```
 3. Ubah kode pada baris kode 38 menjadi seperti ini
 4. Tambahkan juga baris berikut ini, untuk memberikan perbedaan dari tampilan yang sebelumnya
 5. Dari penambahan kode tersebut, silakan dijalankan dan apakah yang dapat Anda jelaskan!
