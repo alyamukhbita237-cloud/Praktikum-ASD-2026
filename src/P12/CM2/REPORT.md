@@ -94,3 +94,90 @@ Kode Pesanan     Nama Pesanan    Harga
 Pilih Menu : 0
 Program selesai.
 ```
+
+## Kuis 2 Modifikasi CM Soal A
+- Penambahan Class DLLRekap03, NodeRekap03, Rekap03, dan penambahan pada method main SistemAntrianMain03
+- Pembuatan class DLLRekap untuk method digunakan untuk menampilkan hasil rekap, mengurutkan menu terbanyak serta penambahan atau update menu 
+- Pembuatan class NodeRekap untuk menginisialisasi variabel Rekap03 dan NodeRekap03 untuk menyimpan data dan node 
+- Pembuatan class Rekap03 untuk menyimpan nama menu yang dipesan dan jumlah pesanan tiap menu
+- Memodifikasi pada class main untuk untuk menampilkan hasil rekap pada tiap menu dari hasil penambahan 3 class diatas 
+Hasil Run :
+```java
+=============================================
+        SISTEM ANTRIAN ROYAL DELISH
+=============================================
+1. Tambah Antrian
+2. Cetak Antrian
+3. Hapus Antrian dan Pesan
+4. Laporan Pesanan
+5. Rekap Pesanan Tiap Menu 
+0. Keluar
+=============================================
+Pilih Menu : 3
+Kode Pesanan  : 124
+Nama Pesanan  : bakso
+Harga         : 9000
+Danra telah memesan bakso
+=============================================
+        SISTEM ANTRIAN ROYAL DELISH
+=============================================
+1. Tambah Antrian
+2. Cetak Antrian
+3. Hapus Antrian dan Pesan
+4. Laporan Pesanan
+5. Rekap Pesanan Tiap Menu 
+0. Keluar
+=============================================
+Pilih Menu : 3
+Kode Pesanan  : 125
+Nama Pesanan  : es teler
+Harga         : 7000
+Sanri telah memesan es teler
+=============================================
+        SISTEM ANTRIAN ROYAL DELISH
+=============================================
+1. Tambah Antrian
+2. Cetak Antrian
+3. Hapus Antrian dan Pesan
+4. Laporan Pesanan
+5. Rekap Pesanan Tiap Menu 
+0. Keluar
+=============================================
+Pilih Menu : 4
+=================================================
+        LAPORAN PESANAN (URUT NAMA PESANAN)
+=================================================
+Kode Pesanan     Nama Pesanan    Harga
+124             bakso           9000
+125             es teler                7000
+123             es teler                7000
+=============================================
+        SISTEM ANTRIAN ROYAL DELISH
+=============================================
+1. Tambah Antrian
+2. Cetak Antrian
+3. Hapus Antrian dan Pesan
+4. Laporan Pesanan
+5. Rekap Pesanan Tiap Menu 
+0. Keluar
+=============================================
+Pilih Menu : 5
+=================================
+        REKAP MENU PESANAN 
+=================================
+Nama Menu            Jumlah
+es teler             2
+bakso                1
+=============================================
+        SISTEM ANTRIAN ROYAL DELISH
+=============================================
+1. Tambah Antrian
+2. Cetak Antrian
+3. Hapus Antrian dan Pesan
+4. Laporan Pesanan
+5. Rekap Pesanan Tiap Menu 
+0. Keluar
+=============================================
+Pilih Menu : 0
+Program selesai.
+```

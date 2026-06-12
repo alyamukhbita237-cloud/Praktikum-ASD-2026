@@ -7,6 +7,7 @@ public class SistemAntrianMain03 {
         Scanner alya = new Scanner(System.in);
         DLLPembeli03 antrian = new DLLPembeli03();
         DLLPesanan03 laporan = new DLLPesanan03();
+        DLLRekap03 rekap = new DLLRekap03();
         int pilihan;
 
         do {
@@ -17,6 +18,7 @@ public class SistemAntrianMain03 {
             System.out.println("2. Cetak Antrian");
             System.out.println("3. Hapus Antrian dan Pesan");
             System.out.println("4. Laporan Pesanan");
+            System.out.println("5. Rekap Pesanan Tiap Menu ");
             System.out.println("0. Keluar");
             System.out.println("=============================================");
             System.out.print("Pilih Menu : ");
@@ -47,11 +49,15 @@ public class SistemAntrianMain03 {
 
                         Pesanan03 newPesanan = new Pesanan03(kode, namaPesanan, harga);
                         laporan.tambahPesanan(newPesanan);
+                        rekap.updateRekap(namaPesanan);
                         System.out.println(p.namaPembeli + " telah memesan "+ namaPesanan);
                     }
                     break;
                 case 4 :
                     laporan.tampilLaporan();
+                    break;
+                case 5 :
+                    rekap.tampilRekap();
                     break;
                 case 0 :
                     System.out.println("Program selesai.");
