@@ -49,3 +49,47 @@ Elemen 0: Mei-mei total elemen: 6 elemen terakhir: Al-Qarni
 Names: [Mei-mei, Noureen, Akhleema, Shannum, Uwais, Al-Qarni]
 ```
 
+## 16.3.1 Percobaan 2
+
+Hasil Run:
+```java
+Banana Orange Watermelon Leci Salak 
+[Banana, Orange, Watermelon, Leci, Salak]
+Salak Leci Watermelon Orange Banana 
+Melon Durian 
+Melon Durian 
+Melon Durian 
+```
+
+### 16.3.2 Pertanyaan Percobaan
+
+1. Apakah perbedaan fungsi push() dan add() pada objek fruits?
+- tidak ada perbedaan, fungsi push() dan add() pada objek fruits sama sama untuk menambahkan elemen ke akhir stack. Namun fungsi push() digunakan khusus untuk operasi stack, sedangkan fungsi add() adalah operasi umum koleksi. Pada objek Stack, keduanya dapat menambahkan elemen ke bagian akhir, tetapi push() lebih sesuai dengan konsep stack.
+
+2. Silakan hilangkan baris 43 dan 44, apakah yang akan terjadi? Mengapa bisa demikian?
+```java
+Banana Orange Watermelon Leci Salak 
+[Banana, Orange, Watermelon, Leci, Salak]
+Salak Leci Watermelon Orange Banana 
+```
+- Jika baris 43 dan 44 dihapus, output setelah proses pop() tidak akan menampilkan data karena seluruh elemen sudah dikeluarkan dan stack menjadi kosong.
+
+3. Jelaskan fungsi dari baris 46-49?
+- baris 46-49 digunakan untuk menampilkan seluruh elemen dalam stack menggunakan objek iterator.
+
+4. Silakan ganti baris kode 25, Stack<String> menjadi List<String> dan apakah yang terjadi?
+Mengapa bisa demikian?
+- Program akan error karena variabel bertipe List tidak mengenal method khusus milik Stack seperti push(), pop(), dan empty().
+
+5. Ganti elemen terakhir dari dari objek fruits menjadi “Strawberry”!
+```java
+Banana Orange Watermelon Leci Salak 
+[Banana, Orange, Watermelon, Leci, Salak]
+Salak Leci Watermelon Orange Banana 
+Melon Strawberry 
+Melon Strawberry 
+Melon Strawberry 
+```
+
+6. Tambahkan 3 buah seperti “Mango”,”guava”, dan “avocado” kemudian dilakukan sorting!
+

@@ -11,7 +11,7 @@ public class DLLRekap03 {
         NodeRekap03 current = head;
         while (current != null) {
             if (current.data.namaPesanan.equalsIgnoreCase(namaPesanan)) {
-                current.data.jumlah++; // jika nama menu ditemukan pada linked list maka node menemukan menu tersebut dan menambahkan jumlahnua sebesar 1
+                current.data.jumlah++; // jika nama menu ditemukan pada linked list maka node menemukan menu tersebut dan menambahkan jumlahnya sebesar 1
                 return;
             }
             current = current.next;
