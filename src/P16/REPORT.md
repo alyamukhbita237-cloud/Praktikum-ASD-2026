@@ -98,5 +98,39 @@ Melon Strawberry
         Collections.sort(fruits);
 ```
 
+## 16.4.1 Percobaan 3
+
+Hasil Run : 
+```java
+Mahasiswwa{nim=201234, nama=Noureen, notelp=021xx1}
+Mahasiswwa{nim=201235, nama=Akhleema, notelp=021xx2}
+Mahasiswwa{nim=201236, nama=Shannum, notelp=021xx3}
+
+Mahasiswwa{nim=201234, nama=Noureen, notelp=021xx1}
+Mahasiswwa{nim=201235, nama=Akhleema Lela, notelp=021xx2}
+Mahasiswwa{nim=201236, nama=Shannum, notelp=021xx3}
+```
+
+### 16.4.3 Pertanyaan Percobaan
+
+1. Pada fungsi tambah() yang menggunakan unlimited argument itu menggunakan konsep apa?
+Dan kelebihannya apa?
+- fungsi tambah() menggunakan konsep Varargs (Variable Arguments) yang memungkinkan method menerima jumlah objek mahasiswa yang tidak terbatas sehingga proses penambahan data menjadi lebih fleksibel dan efisien.
+2. Pada fungsi linearSearch() di atas, silakan diganti dengan fungsi binarySearch() dari collection!
+```java
+int binarySearch(String nim) {
+        Collections.sort(mahasiswas,
+                Comparator.comparing(mhs -> mhs.nim));
+
+        return Collections.binarySearch(
+                mahasiswas,
+                new Mahasiswa03(nim, "", ""),
+                Comparator.comparing(mhs -> mhs.nim));
+    }
+    lm.update(lm.binarySearch("201235"), new Mahasiswa03("201235", "Akhleema Lela", "021xx2"));
+```
+3. Tambahkan fungsi sorting baik secara ascending ataupun descending pada class tersebut!
+- 
+
 
 
