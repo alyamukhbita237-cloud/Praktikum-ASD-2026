@@ -46,6 +46,16 @@ public class ListMahasiswa {
                 Comparator.comparing(mhs -> mhs.nim));
     }
 
+    public void sortAscending() {
+        Collections.sort(mahasiswas,
+                Comparator.comparing(mhs -> mhs.nim));
+    }
+
+    public void sortDescending() {
+        Collections.sort(mahasiswas,
+                Comparator.comparing((Mahasiswa03 mhs) -> mhs.nim).reversed());
+    }
+
     public static void main(String[] args) {
         ListMahasiswa lm = new ListMahasiswa();
         Mahasiswa03 m = new Mahasiswa03("201234", "Noureen", "021xx1");
@@ -54,9 +64,18 @@ public class ListMahasiswa {
 
         lm.tambah(m, m1, m2);
         lm.tampil();
-        // lm.update(lm.linearSearch("201235"), new Mahasiswa03("201235", "Akhleema Lela", "021xx2"));
+        // lm.update(lm.linearSearch("201235"), new Mahasiswa03("201235", "Akhleema
+        // Lela", "021xx2"));
         lm.update(lm.binarySearch("201235"), new Mahasiswa03("201235", "Akhleema Lela", "021xx2"));
         System.out.println("");
+        lm.tampil();
+
+        System.out.println("\nAscending:");
+        lm.sortAscending();
+        lm.tampil();
+
+        System.out.println("\nDescending:");
+        lm.sortDescending();
         lm.tampil();
     }
 }

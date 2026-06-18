@@ -130,7 +130,37 @@ int binarySearch(String nim) {
     lm.update(lm.binarySearch("201235"), new Mahasiswa03("201235", "Akhleema Lela", "021xx2"));
 ```
 3. Tambahkan fungsi sorting baik secara ascending ataupun descending pada class tersebut!
-- 
+- Kode program:
+```java
+public void sortAscending() {
+        Collections.sort(mahasiswas,
+                Comparator.comparing(mhs -> mhs.nim));
+    }
+
+public void sortDescending() {
+        Collections.sort(mahasiswas,
+                Comparator.comparing((Mahasiswa03 mhs) -> mhs.nim).reversed());
+    }
+System.out.println("\nAscending:");
+lm.sortAscending();
+lm.tampil();
+
+System.out.println("\nDescending:");
+lm.sortDescending();
+lm.tampil();
+```
+- Hasil modif:
+```java
+Ascending:
+Mahasiswwa{nim=201234, nama=Noureen, notelp=021xx1}
+Mahasiswwa{nim=201235, nama=Akhleema Lela, notelp=021xx2}
+Mahasiswwa{nim=201236, nama=Shannum, notelp=021xx3}
+
+Descending:
+Mahasiswwa{nim=201236, nama=Shannum, notelp=021xx3}
+Mahasiswwa{nim=201235, nama=Akhleema Lela, notelp=021xx2}
+Mahasiswwa{nim=201234, nama=Noureen, notelp=021xx1}
+```
 
 
 
