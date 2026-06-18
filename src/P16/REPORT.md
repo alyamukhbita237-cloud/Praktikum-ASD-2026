@@ -90,6 +90,13 @@ Melon Strawberry
 Melon Strawberry 
 Melon Strawberry 
 ```
-
 6. Tambahkan 3 buah seperti “Mango”,”guava”, dan “avocado” kemudian dilakukan sorting!
+```java
+        fruits.add("Mango");
+        fruits.add("Guava");
+        fruits.add("Avocado");
+        Collections.sort(fruits);
+```
+
+
 
