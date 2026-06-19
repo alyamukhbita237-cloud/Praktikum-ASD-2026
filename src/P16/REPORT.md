@@ -162,5 +162,168 @@ Mahasiswwa{nim=201235, nama=Akhleema Lela, notelp=021xx2}
 Mahasiswwa{nim=201234, nama=Noureen, notelp=021xx1}
 ```
 
+## Tugas Praktikum
+- Hasil Run :
+
+```java
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 1
+NIM : 200123
+Nama : alya
+Data mahasiswa berhasil ditambah
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 1
+NIM : 200124
+Nama : cindy
+Data mahasiswa berhasil ditambah
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 2
+Kode MK : 12123
+Nama MK : basis data
+Data mata kuliah berhasil ditambah
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 3
+
+Daftar Mahasiswa
+1. 200123 - alya
+2. 200124 - cindy
+Pilih Mahasiswa : 1
+
+Daftar Mata Kuliah
+1. 12123 - basis data
+Pilih Mata Kuliah : 1
+Nilai : 90
+Nilai berhasil ditambahkan
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 4
+
+=== DATA NILAI ===
+alya | basis data | 90.0
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 5
+Masukkan NIM : 200123
+Data ditemukan
+200123 - alya
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 6
+Data nilai berhasil diurutkan
+alya | basis data | 90.0
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 7
+Masukkan NIM yang akan dihapus : 200124
+Mahasiswa berhasil dihapus:
+200124 - cindy
+
+***********************************************
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA SEMESTER
+***********************************************
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Mahasiswa (queue)
+0. Keluar
+***********************************************
+Pilih    : 0
+Program selesai
+```
+
 
 
