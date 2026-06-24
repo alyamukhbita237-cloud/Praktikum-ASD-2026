@@ -22,5 +22,6 @@ public class Mahasiswa03 {
                 "Nama: " + this.nama + " " +
                 "Kelas: " + this.kelas + " " +
                 "IPK: " + this.ipk);
-    }
+    } 
+    
 }

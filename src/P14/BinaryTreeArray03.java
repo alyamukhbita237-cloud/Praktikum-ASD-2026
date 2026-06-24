@@ -43,5 +43,15 @@ public class BinaryTreeArray03 {
             }
         }
     }
+
+    void traversePostOrder(int idxStart) {
+    if (idxStart <= idxLast) {
+        if (dataMahasiswa[idxStart] != null) {
+            traversePostOrder(2 * idxStart + 1); // left child
+            traversePostOrder(2 * idxStart + 2); // right child
+            dataMahasiswa[idxStart].tampilInformasi();
+        }
+    }
+}
     
 }
